@@ -5,6 +5,9 @@ class ActiveAdmin.CheckboxToggler
     @_init()
     @_bind()
 
+  option: (options)->
+    @options = options
+
   _init: ->
     if not @container
       throw new Error('Container element not found')
